@@ -4,6 +4,8 @@ import { FaShieldAlt } from "react-icons/fa";
 import { FaCloud } from "react-icons/fa";
 import { FaSync } from "react-icons/fa";
 import { FaComputer } from "react-icons/fa6";
+import { FaToolbox } from "react-icons/fa";
+
 
 const Services = () => {
   const ServicesList = [
@@ -46,7 +48,28 @@ const Services = () => {
   ];
   return (
     <>
-      
+      <div>
+        <div>
+          <h1>Our Services</h1>
+          <FaToolbox size={50} />
+        </div>
+
+        <div>
+          <div>
+            {ServicesList.map((service, index) => (
+              <div key={index}>
+                {service.icon}
+                <h1>
+                  {service.title}
+                </h1>
+                <p>
+                  {service.description}
+                </p>
+              </div>
+            ))}
+          </div>
+        </div>
+      </div>
     </>
   );
 };
