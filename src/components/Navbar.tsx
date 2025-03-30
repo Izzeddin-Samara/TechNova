@@ -1,6 +1,8 @@
 import { useState } from "react";
 import { SlMenu } from "react-icons/sl";
 import { IoMdClose } from "react-icons/io";
+import { IoMdRocket } from "react-icons/io";
+
 
 export default function Navbar() {
   const [isOpen, setIsopen] = useState(false);
@@ -10,10 +12,10 @@ export default function Navbar() {
   };
   return (
     <>
-      <nav className="w-full">
+      <nav className="w-full fixed bg-gray-100">
         <div className="max-w-6xl flex justify-between mx-auto h-16 items-center mt-4">
           <h1 className="text-5xl font-bold">
-            Tech<span className="text-cyan-700">Nova</span>
+            <IoMdRocket className="inline"/>Tech<span className="text-cyan-700">Nova </span>
           </h1>
           <ul className="hidden md:flex space-x-8 items-center">
             <li>
