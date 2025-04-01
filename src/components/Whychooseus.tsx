@@ -1,4 +1,4 @@
-
+import { FaHandshake } from "react-icons/fa";
 
 export default function Whychooseus() {
   const points = [
@@ -30,6 +30,27 @@ export default function Whychooseus() {
   ];
   return (
     <>
+      <div>
+        <div>
+          <h1>Why Choose us</h1>
+          <FaHandshake size={50} />
+        </div>
+
+        <div></div>
+        <div>
+          <div>
+            {points.map((point) => (
+                <div>
+                <h1>{point.status}</h1>
+                <h3>{point.title}</h3>
+                <p>
+                  {point.description}
+                </p>
+              </div>
+            ))}
+          </div>
+        </div>
+      </div>
     </>
   );
 }
