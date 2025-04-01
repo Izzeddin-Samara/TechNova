@@ -1,3 +1,4 @@
+import { FaQuoteLeft } from "react-icons/fa";
 import { FcBusinessman, FcBusinesswoman } from "react-icons/fc";
 
 export default function Testimonials () {
@@ -48,7 +49,35 @@ export default function Testimonials () {
 
   return (
     <>
-      
+      <div>
+        <div>
+          <h1>Testimonials</h1>
+          <FaQuoteLeft size={60} />
+        </div>
+        <div></div>
+
+        <p>
+          We Have Earned the trust of Our Most
+          <span>
+            Valuable Customers
+          </span>
+        </p>
+        <div>
+          <div>
+            {testimonials.map((testimonial, index) => (
+              <div
+                key={index}
+                
+              >
+                {testimonial.icon}
+                <h1>{testimonial.name}</h1>
+                <p>{testimonial.title}</p>
+                <p>{testimonial.feedback}</p>
+              </div>
+            ))}
+          </div>
+        </div>
+      </div>
     </>
   );
 };
