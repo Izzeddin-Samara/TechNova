@@ -1,28 +1,20 @@
-import './App.css'
-import Navbar from './components/Navbar'
-import HeroSection from './components/HeroSection'
-import Services from './components/Services'
-import Whychooseus from './components/Whychooseus'
-import Pricing from './components/Pricing'
-import Testimonials from './components/Testimonials'
-import CTA from './components/CTA'
-import Footer from './components/Footer'
+import "./App.css";
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import Navbar from "./components/Navbar";
+import Footer from "./components/Footer";
+import Home from "./components/Home";
 function App() {
-
-
   return (
     <>
-    <Navbar/>
-    <HeroSection/>
-    <Services/>
-    <Whychooseus/>
-    <Testimonials/>
-    <Pricing/>
-    <CTA/>
-    <Footer/>
-
+      <Router>
+        <Navbar />
+        <Routes>
+          <Route path="/" element={<Home />} />
+        </Routes>
+        <Footer />
+      </Router>
     </>
-  )
+  );
 }
 
-export default App
+export default App;
