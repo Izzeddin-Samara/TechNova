@@ -1,7 +1,7 @@
 import { useState } from "react";
-import { SlMenu } from "react-icons/sl";
-import { IoMdClose } from "react-icons/io";
 import { IoMdRocket } from "react-icons/io";
+import { FaBars, FaTimes } from 'react-icons/fa';
+
 
 
 export default function Navbar() {
@@ -41,18 +41,18 @@ export default function Navbar() {
           </ul>
           {/* Hamburger Icon (only visible on mobile) */}
           <button onClick={toggle} className="md:hidden">
-            {isOpen ? <IoMdClose size={30} /> : <SlMenu size={30} />}
+            {isOpen ? <FaTimes size={30} /> : <FaBars size={30} />}
           </button>
         </div>
 
         {/* Mobile Menu (Hidden by default, shown when `isOpen` is true) */}
         <ul
-          className={`md:hidden bg-gray-100 p-4 space-y-2 ${
+          className={`md:hidden bg-gray-100 p-4 space-y-2 text-center ${
             isOpen ? "block" : "hidden"
           }`}
         >
           <li>
-            <a className="text-2xl hover:text-cyan-700 " href="#">
+            <a className="text-2xl hover:text-cyan-700 hover:bg-cyan-700 " href="#">
               Home
             </a>
           </li>
