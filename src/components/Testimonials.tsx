@@ -49,30 +49,30 @@ export default function Testimonials () {
 
   return (
     <>
-      <div>
-        <div>
-          <h1>Testimonials</h1>
+      <div className="w-full">
+        <div className="flex justify-center mt-50">
+          <h1 className="text-6xl font-bold mr-4 mb-4">Testimonials</h1>
           <FaQuoteLeft size={60} />
         </div>
-        <div></div>
+        <div className="w-3/10 h-2 bg-cyan-700 mx-auto mb-12"></div>
 
-        <p>
+        <p className="text-center text-4xl mt-4 font-medium">
           We Have Earned the trust of Our Most
-          <span>
+          <span className="text-cyan-700 font-bold ml-4">
             Valuable Customers
           </span>
         </p>
-        <div>
-          <div>
+        <div className="max-w-4xl mx-auto">
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-2 gap-16 mt-8">
             {testimonials.map((testimonial, index) => (
               <div
                 key={index}
-                
+                className="text-center bg-gray-50 p-8 rounded-lg shadow-lg mb-8 "
               >
                 {testimonial.icon}
-                <h1>{testimonial.name}</h1>
-                <p>{testimonial.title}</p>
-                <p>{testimonial.feedback}</p>
+                <h1 className="font-bold text-3xl">{testimonial.name}</h1>
+                <p className="italic text-sm">{testimonial.title}</p>
+                <p className="text-justify mt-4">{testimonial.feedback}</p>
               </div>
             ))}
           </div>
