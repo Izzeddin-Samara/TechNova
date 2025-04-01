@@ -5,91 +5,92 @@ import { BsFillTelephoneFill } from "react-icons/bs";
 export default function Footer() {
   return (
     <>
-      <footer>
-        <div>
-          <div>
+      <footer className="mt-50 bg-gray-200 p-8">
+        <div className="max-w-8xl mx-auto">
+          <div className="grid sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-5">
             <div>
-              <h1>TechNova</h1>
-              <p>
+              <h1 className="text-3xl">TechNova</h1>
+              <p className="w-3/4">
                 Empowering Your Business with Cutting-Edge Technology Solutions
               </p>
             </div>
             <div>
-              <h1>Company</h1>
-              <ul>
+              <h1 className="font-bold text-xl">Company</h1>
+              <ul className="space-y-4 mt-6">
                 <li>
-                  <a href="#">About us</a>
+                  <a href="#" className="hover:text-cyan-700 hover:underline">About us</a>
                 </li>
                 <li>
-                  <a href="#">Our Services</a>
+                  <a href="#" className="hover:text-cyan-700 hover:underline" >Our Services</a>
                 </li>
                 <li>
-                  <a href="#">Prcing</a>
+                  <a href="#" className="hover:text-cyan-700 hover:underline">Prcing</a>
                 </li>
                 <li>
-                  <a href="#">Blog</a>
+                  <a href="#" className="hover:text-cyan-700 hover:underline">Blog</a>
                 </li>
                 <li>
-                  <a href="#">Careers</a>
-                </li>
-              </ul>
-            </div>
-            <div>
-              <h1>Support</h1>
-              <ul>
-                <li>
-                  <a href="#" >FAQ</a>
-                </li>
-                <li>
-                  <a href="#" >Contact Us</a>
-                </li>
-                <li>
-                  <a href="#">Help Center</a>
-                </li>
-                <li>
-                  <a href="#">Terms and conditions</a>
-                </li>
-                <li>
-                  <a href="#">Privacy Policy</a>
+                  <a href="#" className="hover:text-cyan-700 hover:underline">Careers</a>
                 </li>
               </ul>
             </div>
             <div>
-              <h1>Solutions</h1>
-              <ul>
+              <h1 className="font-bold text-xl">Support</h1>
+              <ul className="space-y-4 mt-6">
                 <li>
-                  <a href="#" >Cloud Solutions</a>
+                  <a href="#" className="hover:text-cyan-700 hover:underline">FAQ</a>
                 </li>
                 <li>
-                  <a href="#" >UI/UX Design</a>
+                  <a href="#" className="hover:text-cyan-700 hover:underline">Contact Us</a>
                 </li>
                 <li>
-                  <a href="#" >Software Development</a>
+                  <a href="#" className="hover:text-cyan-700 hover:underline">Help Center</a>
                 </li>
                 <li>
-                  <a href="#">Cybersecurity</a>
+                  <a href="#" className="hover:text-cyan-700 hover:underline">Terms and conditions</a>
                 </li>
                 <li>
-                  <a href="#">IT consulting</a>
+                  <a href="#" className="hover:text-cyan-700 hover:underline">Privacy Policy</a>
                 </li>
               </ul>
             </div>
             <div>
-              <h1>Connect with Us</h1>
-              <ul>
+              <h1 className="font-bold text-xl">Solutions</h1>
+              <ul className="space-y-4 mt-6">
                 <li>
+                  <a href="#" className="hover:text-cyan-700 hover:underline">Cloud Solutions</a>
+                </li>
+                <li>
+                  <a href="#" className="hover:text-cyan-700 hover:underline">UI/UX Design</a>
+                </li>
+                <li>
+                  <a href="#" className="hover:text-cyan-700 hover:underline">Software Development</a>
+                </li>
+                <li>
+                  <a href="#" className="hover:text-cyan-700 hover:underline">Cybersecurity</a>
+                </li>
+                <li>
+                  <a href="#" className="hover:text-cyan-700 hover:underline">IT consulting</a>
+                </li>
+              </ul>
+            </div>
+            <div>
+              <h1 className="font-bold text-xl ">Connect with Us</h1>
+              <ul className="space-y-4 mt-6">
+                <li className="flex items-center space-x-1">
                   <FaLocationDot />
                   <span>123 TechNova Street, City, Country</span>
                 </li>
-                <li>
+                <li className="flex items-center space-x-1">
                   <BsFillTelephoneFill />
                   <span>+123-456-7890</span>
                 </li>
-                <li>
+                <li className="flex items-center space-x-1">
                   <MdEmail />
-                  <span>
+                  <span className="">
                     <a
                       href="#"
+                      className="underline  hover:no-underline text-blue-700"
                     >
                       support@technovasolutions.com
                     </a>
@@ -99,8 +100,8 @@ export default function Footer() {
             </div>
           </div>
         </div>
-        <div></div>
-        <p>
+        <div className="w-full h-1 bg-cyan-700 mx-auto mt-8"></div>
+        <p className="text-center text-gray-500 mt-4 mb-2">
           © 2025 TechNova Solutions. All rights reserved.
         </p>
       </footer>
