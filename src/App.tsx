@@ -5,6 +5,7 @@ import Services from './components/Services'
 import Whychooseus from './components/Whychooseus'
 import Pricing from './components/Pricing'
 import Testimonials from './components/Testimonials'
+import CTA from './components/CTA'
 
 function App() {
 
@@ -17,6 +18,7 @@ function App() {
     <Whychooseus/>
     <Testimonials/>
     <Pricing/>
+    <CTA/>
 
     </>
   )
