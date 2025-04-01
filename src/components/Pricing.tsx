@@ -55,13 +55,13 @@ export default function Pricing() {
     <>
       <div>
         <h1 className="text-5xl font-bold text-center mt-30">Built for businesses ready to innovate</h1>
-        <p className="text-center font-semibold">At Technova, we leverage technology to drive growth, efficiency, and security—helping businesses stay ahead in a digital world.</p>
+        <p className="text-center text-2xl text-gray-600 w-2/4 mx-auto mt-8">At Technova, we leverage technology to drive growth, efficiency, and security—helping businesses stay ahead in a digital world.</p>
         <div className="max-w-7xl mx-auto">
           <div className="grid sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
             {pricingPlans.map((plan) => (
-              <div className="bg-slate-200 p-6 space-y-8 mt-10 rounded-lg shodaw-2xl">
+              <div className="bg-slate-200 p-6 space-y-8 mt-10 rounded-xl shodaw-2xl">
                 <h1 className="text-5xl text-center font-bold">{plan.name}</h1>
-                <p className="text-3xl text-center font-semibold">
+                <p className="text-3xl text-center font-medium">
                   {plan.price} <span className="text-lg">/month</span>
                 </p>
 
