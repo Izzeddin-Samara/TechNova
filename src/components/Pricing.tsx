@@ -54,26 +54,26 @@ export default function Pricing() {
   return (
     <>
       <div>
-        <h1>Built for businesses ready to innovate</h1>
-        <p>At Technova, we leverage technology to drive growth, efficiency, and security—helping businesses stay ahead in a digital world.</p>
-        <div>
-          <div>
+        <h1 className="text-5xl font-bold text-center mt-30">Built for businesses ready to innovate</h1>
+        <p className="text-center font-semibold">At Technova, we leverage technology to drive growth, efficiency, and security—helping businesses stay ahead in a digital world.</p>
+        <div className="max-w-7xl mx-auto">
+          <div className="grid sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
             {pricingPlans.map((plan) => (
-              <div>
-                <h1>{plan.name}</h1>
-                <p>
-                  {plan.price} <span>/month</span>
+              <div className="bg-slate-200 p-6 space-y-8 mt-10 rounded-lg shodaw-2xl">
+                <h1 className="text-5xl text-center font-bold">{plan.name}</h1>
+                <p className="text-3xl text-center font-semibold">
+                  {plan.price} <span className="text-lg">/month</span>
                 </p>
 
-                <ul>
+                <ul className="text-center">
                   {plan.features.map((feature, index) => (
-                    <div>
-                      <FaCheckCircle/>
+                    <div className="flex space-x-2 text-md space-y-8">
+                      <FaCheckCircle size={20} className="text-cyan-700"/>
                       <li key={index}> {feature}</li>
                     </div>
                   ))}
                 </ul>
-                <button>Get Started</button>
+                <button className="bg-cyan-700 font-bold hover:bg-cyan-800 p-4 w-full text-2xl text-white rounded-lg focus:ring-4 focus:ring-cyan-500 cursor-pointer">Get Started</button>
               </div>
             ))}
           </div>
