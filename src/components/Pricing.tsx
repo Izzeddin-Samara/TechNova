@@ -1,3 +1,4 @@
+import { FaCheckCircle } from "react-icons/fa";
 
 export default function Pricing() {
   const pricingPlans = [
@@ -52,6 +53,32 @@ export default function Pricing() {
   ];
   return (
     <>
+      <div>
+        <h1>Built for businesses ready to innovate</h1>
+        <p>At Technova, we leverage technology to drive growth, efficiency, and security—helping businesses stay ahead in a digital world.</p>
+        <div>
+          <div>
+            {pricingPlans.map((plan) => (
+              <div>
+                <h1>{plan.name}</h1>
+                <p>
+                  {plan.price} <span>/month</span>
+                </p>
+
+                <ul>
+                  {plan.features.map((feature, index) => (
+                    <div>
+                      <FaCheckCircle/>
+                      <li key={index}> {feature}</li>
+                    </div>
+                  ))}
+                </ul>
+                <button>Get Started</button>
+              </div>
+            ))}
+          </div>
+        </div>
+      </div>
     </>
   );
 }
