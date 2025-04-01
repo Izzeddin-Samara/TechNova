@@ -6,7 +6,7 @@ import Whychooseus from './components/Whychooseus'
 import Pricing from './components/Pricing'
 import Testimonials from './components/Testimonials'
 import CTA from './components/CTA'
-
+import Footer from './components/Footer'
 function App() {
 
 
@@ -19,6 +19,7 @@ function App() {
     <Testimonials/>
     <Pricing/>
     <CTA/>
+    <Footer/>
 
     </>
   )
