@@ -32,18 +32,18 @@ export default function Whychooseus() {
     <>
       <div className="w-full mt-8">
         <div className="flex justify-center">
-          <h1 className="text-5xl font-bold mb-8 mr-4">Why Choose us</h1>
+          <h1 className="text-6xl font-bold mb-4 mr-4">Why Choose us</h1>
           <FaHandshake size={50} />
         </div>
 
-        <div className="w-2/4 h-2 bg-cyan-700 mx-auto mb-20"></div>
+        <div className="w-2/7 h-2 bg-cyan-700 mx-auto mb-30"></div>
         <div className="max-w-7xl mx-auto text-center">
           <div className="grid sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 ml-8">
             {points.map((point) => (
                 <div className="text-center mx-auto">
-                <h1 className="text-6xl font-semibold text-cyan-700">{point.status}</h1>
-                <h3 className="text-md font-bold">{point.title}</h3>
-                <p className="text-gray-700 mt-4 text-justify text-sm">
+                <h1 className="text-7xl font-semibold text-cyan-700">{point.status}</h1>
+                <h3 className="text-lg font-bold">{point.title}</h3>
+                <p className="text-gray-700 mt-4 text-justify text-md">
                   {point.description}
                 </p>
               </div>
