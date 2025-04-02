@@ -1,7 +1,7 @@
 import { useState } from "react";
 import { IoMdRocket } from "react-icons/io";
 import { FaBars, FaTimes } from 'react-icons/fa';
-
+import { Link } from "react-router-dom";
 
 
 export default function Navbar() {
@@ -19,9 +19,9 @@ export default function Navbar() {
           </h1>
           <ul className="hidden md:flex space-x-8 items-center">
             <li>
-              <a className="text-2xl hover:text-cyan-700 " href="#">
-                Home
-              </a>
+              <Link to="/" className="text-2xl md:text-xl hover:text-cyan-700 ">
+              Home
+              </Link>
             </li>
             <li>
               <a className="text-2xl hover:text-cyan-700" href="#">
@@ -34,9 +34,9 @@ export default function Navbar() {
               </a>
             </li>
             <li>
-              <a className="text-2xl hover:text-cyan-700" href="#">
-                Contact
-              </a>
+            <Link to="/contact" className="text-2xl md:text-xl hover:text-cyan-700 ">
+              Contact
+              </Link>
             </li>
           </ul>
           {/* Hamburger Icon (only visible on mobile) */}
