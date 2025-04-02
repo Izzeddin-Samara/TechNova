@@ -9,7 +9,7 @@ export default function Footer() {
         <div className="max-w-8xl mx-auto">
           <div className="grid sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-5">
             <div>
-              <h1 className="text-3xl">TechNova</h1>
+              <h1 className="text-3xl font-bold">Tech<span className="text-cyan-700">Nova</span></h1>
               <p className="w-3/4">
                 Empowering Your Business with Cutting-Edge Technology Solutions
               </p>
@@ -90,7 +90,7 @@ export default function Footer() {
                   <span className="">
                     <a
                       href="#"
-                      className="underline  hover:no-underline text-blue-700"
+                      className="underline  hover:no-underline text-cyan-700"
                     >
                       support@technovasolutions.com
                     </a>
