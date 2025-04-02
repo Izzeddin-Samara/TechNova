@@ -5,80 +5,77 @@ import { FaPhoneAlt } from "react-icons/fa";
 export default function Contact() {
   return (
     <>
-      <div>
-        <div>
-          <h1>Contact Us</h1>
-          <h3>
+      <div className="flex items-center h-[400px]">
+        <div className="text-center w-full">
+          <h1 className="text-2xl font-bold mb-4 mt-20 lg:text-5xl md:text-3xl sm:text-lg">Contact Us</h1>
+          <h1 className="text-xl w-4/6 mx-auto  sm:text-xl lg:text-2xl md:text-lg">
             Let's Build Something Great Together!
-          </h3>
-          <p>
+          </h1>
+          <p className="text-md sm:text-lg lg:text-2xl text-gray-600 mt-4 w-3/4 mx-auto">
             We’d love to hear from you. Reach out for a consultation,
             collaboration, or support.
           </p>
         </div>
       </div>
       
-      <div></div>
-      <div>
-        <div>
+      <div className="w-3/4 bg-cyan-700 h-2 mx-auto "></div>
+      <div className="w-full">
+        <div className="max-w-6xl bg-gray-100 mx-auto p-12 h-auto rounded-lg">
           
 
-          <div>
+          <div className="grid grid-cols-1 sm:grid-col-2 lg:grid-cols-2 gap-16">
             <div>
-              <form>
+              <form className="space-y-6">
                 <div>
-                  <label>Name</label>
+                  <label className="text-xl">Name</label>
                   <input
-                    
+                    className="w-full p-3 outline-none border border-gray-300 rounded-lg mt-2 focus:ring-3 focus:ring-cyan-600"
                     type="text"
                   />
                 </div>
                 <div>
-                  <label>Email</label>
+                  <label className="text-xl">Email</label>
                   <input
+                    className="w-full p-3 border rounded-lg outline-none border border-gray-300 mt-2 focus:ring-3 focus:ring-cyan-600"
                     type="text"
                   />
                 </div>
                 <div>
-                  <label>Message</label>
+                  <label className="text-xl">Message</label>
                   <textarea
-                    
+                    className="w-full p-8 border rounded-lg border outline-none border-gray-300 mt-2 resize-none focus:ring-3 focus:ring-cyan-600"
                     name="Message"
                     id=""
                   ></textarea>
                 </div>
-                <button>Send Message</button>
+                <button className=" w-full bg-cyan-700 hover:bg-cyan-800 text-white p-4 rounded-lg font-bold focus:ring-4 focus:ring-cyan-600 cursor-pointer text-xl">Send Message</button>
               </form>
             </div>
-            <div >
-              <div>
-                <MdEmail size={60} />
-                <h1>Email us:</h1>
-                <p>
-                  <a href="mailto:support@technovasolutions.com">
-                  support@technovasolutions.com
-
-                  </a>
-                
+            <div className="space-y-6">
+              <div className="text-center">
+                <MdEmail className="mx-auto text-cyan-700 rounded-lg" size={60} />
+                <h1 className="font-bold">Email us:</h1>
+                <p className="font-bold">
+                  support@technovasolutions.com                
                   
                 </p>
               </div>
-              <div>
-                <FaLocationDot size={60} />
-                <h1>Address:</h1>
-                <p>
+              <div className="text-center">
+                <FaLocationDot className="mx-auto text-cyan-700 p-2 rounded-lg" size={60} />
+                <h1 className="font-bold">Address:</h1>
+                <p className="text-cyan-700 font-bold">
                 123 TechNova Street, City, Country
                   
                 </p>
               </div>
-              <div>
-                <FaPhoneAlt size={60} />
-                <h1>Call us:</h1>
+              <div className="text-center">
+                <FaPhoneAlt className="mx-auto text-cyan-700 p-2 rounded-lg" size={60} />
+                <h1 className="font-bold">Call us:</h1>
                 <p>
                   Call us to speak to a member of our team. We are
-                  <span>always happy to help.</span>
+                  <span className="block">always happy to help.</span>
                 </p>
-                <p>+123-456-7890</p>
+                <p className="text-cyan-700 font-bold">+123-456-7890</p>
               </div>
             </div>
           </div>
