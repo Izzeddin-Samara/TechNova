@@ -1,3 +1,4 @@
+import Whoweare from "./whoweare";
 
 
 
@@ -21,7 +22,7 @@ export default function About() {
         </div>
       </div>
 
-
+      <Whoweare/>
     </>
   );
 }
