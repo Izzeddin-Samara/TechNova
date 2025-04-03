@@ -24,12 +24,13 @@ export default function Navbar() {
               </Link>
             </li>
             <li>
-              <a className="text-2xl hover:text-cyan-700" href="#">
-                About
-              </a>
+              <Link className="text-2xl md:text-xl hover:text-cyan-700" to="/about">
+              About
+              </Link>
+              
             </li>
             <li>
-              <a className="text-2xl hover:text-cyan-700" href="#">
+              <a className="text-2xl md:text-xl hover:text-cyan-700" href="#">
                 Blog
               </a>
             </li>
