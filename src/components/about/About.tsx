@@ -1,4 +1,5 @@
 import Whoweare from "./whoweare";
+import MissionVision from "./MissionVision";
 
 
 
@@ -23,6 +24,7 @@ export default function About() {
       </div>
 
       <Whoweare/>
+      <MissionVision/>
     </>
   );
 }
