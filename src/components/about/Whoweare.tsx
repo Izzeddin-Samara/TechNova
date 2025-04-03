@@ -3,17 +3,17 @@ import { FaCircleInfo } from "react-icons/fa6";
 export default function Whoweare() {
   return (
     <>
-      <div>
-        <div>
+      <div className="w-full bg-gray-250 p-8">
+        <div className="max-w-7xl mx-auto mt-8">
           <div className="">
-            <div>
-              <FaCircleInfo size={50} />
-              <h1>
+            <div className="flex justify-center">
+              <FaCircleInfo className="mr-4 text-cyan-700" size={50} />
+              <h1 className="text-5xl text-center text-cyan-700 font-bold">
                 Who we are?
               </h1>
             </div>
 
-            <p>
+            <p className="text-lg mt-8 text-justify">
               At TechNova, we are a dedicated team of technology experts with a
               deep understanding of software development, cybersecurity, cloud
               solutions, and digital transformation. With a passion for
@@ -27,12 +27,12 @@ export default function Whoweare() {
               technology infrastructure for better performance and growth.
             </p>
           </div>
-          <div>
+          <div className="grid sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-2">
             <div>
-              <img src="office.webp" alt="office-img" />
+              <img className="mt-8 rounded-lg" src="office.webp" alt="office-img" />
             </div>
             <div>
-              <p>
+              <p className="text-lg mt-8 ml-8 mt-16 text-justify">
                 We pride ourselves on being solution-oriented, always focused on
                 delivering secure, scalable, and high-performance systems that
                 meet the unique needs of each client. Whether it’s creating web
