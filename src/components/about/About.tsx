@@ -1,5 +1,6 @@
 import Whoweare from "./whoweare";
 import MissionVision from "./MissionVision";
+import OurValues from "./OurValues";
 
 
 
@@ -25,6 +26,7 @@ export default function About() {
 
       <Whoweare/>
       <MissionVision/>
+      <OurValues/>
     </>
   );
 }
