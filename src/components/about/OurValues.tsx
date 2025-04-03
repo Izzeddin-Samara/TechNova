@@ -39,17 +39,17 @@ export default function OurValues() {
   ];
   return (
     <>
-      <div>
-        <div>
-          <h1>
+      <div className="w-full">
+        <div className="max-w-7xl mx-auto mt-40">
+          <h1 className="text-center text-5xl text-cyan-700 font-bold">
             Our Values
           </h1>
-          <div>
+          <div className="grid sm:grid-cols-1 md:grid-cols-5 lg:grid-cols-5 mt-30 gap-8">
             {Values.map((value, index) => (
-                <div key={index}>
+                <div key={index} className="text-center">
                 {value.icon }
-                <h1>{value.name}</h1>
-                <p>
+                <h1 className="font-bold text-cyan-700 text-2xl">{value.name}</h1>
+                <p className="text-sm mt-4 text-justify">
                   {value.description}
                 </p>
               </div>
