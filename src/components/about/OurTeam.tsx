@@ -60,19 +60,19 @@ export default function OurTeam() {
 
   return (
     <>
-      <div>
-        <div>
-            <h2>Our Team</h2>
-          <div>
+      <div className="w-full">
+        <div className="max-w-6xl mx-auto mt-50">
+            <h2 className="text-5xl font-bold text-cyan-700 text-center mb-20">Our Team</h2>
+          <div className="grid sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
           {teamMembers.map((member, index) => (
               <div
                 key={index}
-                
+                className="text-center bg-gray-50 p-8 rounded-lg shadow-lg mb-8"
               >
                 {member.icon}
-                <h1>{member.name}</h1>
-                <p>{member.position}</p>
-                <p>{member.bio}</p>
+                <h1 className="font-bold text-xl">{member.name}</h1>
+                <p className="italic text-sm">{member.position}</p>
+                <p className="text-justify mt-4">{member.bio}</p>
               </div>
             ))}
           </div>
