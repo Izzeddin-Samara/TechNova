@@ -58,13 +58,11 @@ const OurServices = () => {
     <>
       <div className="w-full text-center mx-auto  p-6 mt-20 mb-50">
         <div className="flex justify-center">
-          <h1 className="text-xl font-bold mb-4 mr-4 lg:text-6xl md:text-4xl">
+          <h1 className="text-4xl font-bold mb-4 mr-4 lg:text-6xl md:text-4xl">
             Our Services
           </h1>
-          <FaToolbox className="w-12 h-12 sm:w-14 sm:h-14 md:w-10 md:h-10 lg:w-12 lg:h-12" />
         </div>
 
-        <div className="w-2/8 h-2 bg-cyan-700 mx-auto mb-12"></div>
         <div className="max-w-6xl mx-auto p-8 space-y-8 rounded-xl">
           <div className="grid grid-cols-1 sm:grid-cols-1 lg:grid-cols-3 gap-8">
             {ServicesList.map((service, index) => (
