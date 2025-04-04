@@ -1,4 +1,3 @@
-import { FaQuoteLeft } from "react-icons/fa";
 import { FcBusinessman, FcBusinesswoman } from "react-icons/fc";
 
 export default function Testimonials () {

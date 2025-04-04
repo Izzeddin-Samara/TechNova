@@ -4,7 +4,6 @@ import { FaShieldAlt } from "react-icons/fa";
 import { FaCloud } from "react-icons/fa";
 import { FaSync } from "react-icons/fa";
 import { FaComputer } from "react-icons/fa6";
-import { FaToolbox } from "react-icons/fa";
 import { Link } from "react-router-dom";
 
 const OurServices = () => {
