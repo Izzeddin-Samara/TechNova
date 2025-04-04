@@ -13,7 +13,7 @@ export default function About() {
     <>
       <div className="flex items-center h-[400px] mb-20">
         <div className="text-center max-w-7xl mx-auto mt-10">
-          <h1 className="text-3xl text-cyan-700 font-bold mb-4 mt-60  lg:text-5xl md:text-5xl sm:text-5xl">
+          <h1 className="text-3xl text-cyan-700 font-bold mb-4 mt-40  lg:text-5xl md:text-5xl sm:text-5xl">
             About Us
           </h1>
           <p className="text-md mt-8 text-justify p-4 md:text-xl">
