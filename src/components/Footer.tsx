@@ -6,7 +6,7 @@ export default function Footer() {
   return (
     <>
       <footer className="mt-50 bg-gray-200 p-8">
-        <div className="max-w-5xl mx-auto">
+        <div className="max-w-8xl mx-auto">
           <div className="grid sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-5  space-x-4">
             <div>
               <h1 className="text-3xl font-bold">
