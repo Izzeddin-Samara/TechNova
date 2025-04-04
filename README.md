@@ -11,5 +11,14 @@
 - 📬 **Contact Us page** — simple form for easy communication  
 - 📝 **Careers page** — includes an application form with CV upload  
 - 🏠 **Home page** — features a Pricing section and client Testimonials  
-- 🧭 **Clean, intuitive layout** — with a modern Navbar and Footer  
+- 🧭 **Clean, intuitive layout** — with a modern Navbar and Footer
+
+## Built With
+
+- [React](https://reactjs.org/)  
+- [Tailwind CSS](https://tailwindcss.com/)  
+- [Vercel](https://vercel.com/) for deployment
+   
+   
+   
 
