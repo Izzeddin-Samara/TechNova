@@ -13,7 +13,7 @@ export default function Navbar() {
     <>
       <nav className="w-full fixed bg-gray-100">
         <div className="max-w-7xl flex justify-between mx-auto h-16 items-center mt-4">
-          <h1 className="text-5xl font-bold">
+          <h1 className="text-3xl font-bold sm:text-xl lg:text-5xl">
             <IoMdRocket className="inline" />
             Tech<span className="text-cyan-700">Nova </span>
           </h1>
@@ -70,27 +70,42 @@ export default function Navbar() {
           }`}
         >
           <li>
-            <a
-              className="text-2xl hover:text-cyan-700 hover:bg-cyan-700 "
-              href="#"
-            >
+            <Link to="/" className="text-2xl md:text-xl hover:text-cyan-700 ">
               Home
-            </a>
+            </Link>
           </li>
           <li>
-            <a className="text-2xl hover:text-cyan-700" href="#">
+            <Link
+              className="text-2xl md:text-xl hover:text-cyan-700"
+              to="/about"
+            >
               About
-            </a>
+            </Link>
           </li>
           <li>
-            <a className="text-2xl hover:text-cyan-700" href="#">
-              Blog
-            </a>
+            <Link
+              className="text-2xl md:text-xl hover:text-cyan-700"
+              to="/services"
+            >
+              Services
+            </Link>
           </li>
+
           <li>
-            <a className="text-2xl hover:text-cyan-700" href="#">
+            <Link
+              to="/contact"
+              className="text-2xl md:text-xl hover:text-cyan-700 "
+            >
               Contact
-            </a>
+            </Link>
+          </li>
+          <li>
+            <Link
+              className="text-2xl md:text-xl hover:text-cyan-700"
+              to="/careers"
+            >
+              Careers{" "}
+            </Link>
           </li>
         </ul>
       </nav>
