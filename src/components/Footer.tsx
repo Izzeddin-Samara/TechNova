@@ -12,7 +12,7 @@ export default function Footer() {
               <h1 className="text-3xl font-bold">
                 Tech<span className="text-cyan-700">Nova</span>
               </h1>
-              <p className="w-3/4 text-md text-justify mt-5 mb-4 mx-auto">
+              <p className="w-3/4 text-sm text-justify mt-5 mb-4 mx-auto">
                 At Technova, we are committed to empowering your business by
                 delivering cutting-edge, future-ready technology solutions that
                 are secure, scalable, and tailored to meet your unique goals.
@@ -44,7 +44,7 @@ export default function Footer() {
                     href="#"
                     className="hover:text-cyan-700 text-lg hover:underline"
                   >
-                    Prcing
+                    Pricing
                   </a>
                 </li>
                 <li>
