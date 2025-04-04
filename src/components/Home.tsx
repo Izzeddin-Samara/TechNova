@@ -1,5 +1,5 @@
 import HeroSection from "./HeroSection";
-import Services from "./Services";
+import OurServices from "./OurServices";
 import Testimonials from "./Testimonials";
 import Pricing from "./Pricing";
 import CTA from "./CTA";
@@ -7,7 +7,7 @@ export default function Home() {
   return (
     <>
     <HeroSection/>
-    <Services/>
+    <OurServices/>
     <Testimonials/>
     <Pricing/>
     <CTA/>
