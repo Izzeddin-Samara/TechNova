@@ -1,8 +1,7 @@
 import { useState } from "react";
 import { IoMdRocket } from "react-icons/io";
-import { FaBars, FaTimes } from 'react-icons/fa';
+import { FaBars, FaTimes } from "react-icons/fa";
 import { Link } from "react-router-dom";
-
 
 export default function Navbar() {
   const [isOpen, setIsopen] = useState(false);
@@ -13,30 +12,40 @@ export default function Navbar() {
   return (
     <>
       <nav className="w-full fixed bg-gray-100">
-        <div className="max-w-6xl flex justify-between mx-auto h-16 items-center mt-4">
+        <div className="max-w-7xl flex justify-between mx-auto h-16 items-center mt-4">
           <h1 className="text-5xl font-bold">
-            <IoMdRocket className="inline"/>Tech<span className="text-cyan-700">Nova </span>
+            <IoMdRocket className="inline" />
+            Tech<span className="text-cyan-700">Nova </span>
           </h1>
           <ul className="hidden md:flex space-x-8 items-center">
             <li>
               <Link to="/" className="text-2xl md:text-xl hover:text-cyan-700 ">
-              Home
+                Home
               </Link>
             </li>
             <li>
-              <Link className="text-2xl md:text-xl hover:text-cyan-700" to="/about">
-              About
+              <Link
+                className="text-2xl md:text-xl hover:text-cyan-700"
+                to="/about"
+              >
+                About
               </Link>
-              
+            </li>
+
+            <li>
+              <Link
+                to="/contact"
+                className="text-2xl md:text-xl hover:text-cyan-700 "
+              >
+                Contact
+              </Link>
             </li>
             <li>
-              <a className="text-2xl md:text-xl hover:text-cyan-700" href="#">
-                Blog
-              </a>
-            </li>
-            <li>
-            <Link to="/contact" className="text-2xl md:text-xl hover:text-cyan-700 ">
-              Contact
+              <Link
+                className="text-2xl md:text-xl hover:text-cyan-700"
+                to="/careers"
+              >
+                Careers{" "}
               </Link>
             </li>
           </ul>
@@ -53,7 +62,10 @@ export default function Navbar() {
           }`}
         >
           <li>
-            <a className="text-2xl hover:text-cyan-700 hover:bg-cyan-700 " href="#">
+            <a
+              className="text-2xl hover:text-cyan-700 hover:bg-cyan-700 "
+              href="#"
+            >
               Home
             </a>
           </li>
