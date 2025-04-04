@@ -6,51 +6,107 @@ export default function Footer() {
   return (
     <>
       <footer className="mt-50 bg-gray-200 p-8">
-        <div className="max-w-8xl mx-auto">
-          <div className="grid sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-5">
+        <div className="max-w-5xl mx-auto">
+          <div className="grid sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-5  space-x-4">
             <div>
-              <h1 className="text-3xl font-bold">Tech<span className="text-cyan-700">Nova</span></h1>
-              <p className="w-3/4">
-                Empowering Your Business with Cutting-Edge Technology Solutions
+              <h1 className="text-3xl font-bold">
+                Tech<span className="text-cyan-700">Nova</span>
+              </h1>
+              <p className="w-3/4 text-md text-justify mt-5 mb-4">
+                At Technova, we are committed to empowering your business by
+                delivering cutting-edge, future-ready technology solutions that
+                are secure, scalable, and tailored to meet your unique goals.
+                From cloud computing and cybersecurity to digital transformation
+                and custom software development.
               </p>
             </div>
             <div>
               <h1 className="font-bold text-xl">Company</h1>
               <ul className="space-y-4 mt-6">
                 <li>
-                  <a href="#" className="hover:text-cyan-700 hover:underline">About us</a>
+                  <a
+                    href="#"
+                    className="hover:text-cyan-700 text-lg hover:underline"
+                  >
+                    About us
+                  </a>
                 </li>
                 <li>
-                  <a href="#" className="hover:text-cyan-700 hover:underline" >Our Services</a>
+                  <a
+                    href="#"
+                    className="hover:text-cyan-700 text-lg hover:underline"
+                  >
+                    Our Services
+                  </a>
                 </li>
                 <li>
-                  <a href="#" className="hover:text-cyan-700 hover:underline">Prcing</a>
+                  <a
+                    href="#"
+                    className="hover:text-cyan-700 text-lg hover:underline"
+                  >
+                    Prcing
+                  </a>
                 </li>
                 <li>
-                  <a href="#" className="hover:text-cyan-700 hover:underline">Blog</a>
+                  <a
+                    href="#"
+                    className="hover:text-cyan-700 text-lg hover:underline"
+                  >
+                    Blog
+                  </a>
                 </li>
                 <li>
-                  <a href="#" className="hover:text-cyan-700 hover:underline">Careers</a>
+                  <a
+                    href="#"
+                    className="hover:text-cyan-700 text-lg hover:underline"
+                  >
+                    Careers
+                  </a>
                 </li>
               </ul>
             </div>
             <div>
               <h1 className="font-bold text-xl">Support</h1>
-              <ul className="space-y-4 mt-6">
+              <ul className="space-y-4 mt-6 mb-6 ">
                 <li>
-                  <a href="#" className="hover:text-cyan-700 hover:underline">FAQ</a>
+                  <a
+                    href="#"
+                    className="hover:text-cyan-700 text-lg hover:underline"
+                  >
+                    FAQ
+                  </a>
                 </li>
                 <li>
-                  <a href="#" className="hover:text-cyan-700 hover:underline">Contact Us</a>
+                  <a
+                    href="#"
+                    className="hover:text-cyan-700 text-lg hover:underline"
+                  >
+                    Contact Us
+                  </a>
                 </li>
                 <li>
-                  <a href="#" className="hover:text-cyan-700 hover:underline">Help Center</a>
+                  <a
+                    href="#"
+                    className="hover:text-cyan-700 text-lg hover:underline"
+                  >
+                    Help Center
+                  </a>
                 </li>
                 <li>
-                  <a href="#" className="hover:text-cyan-700 hover:underline">Terms and conditions</a>
+                  <a
+                    href="#"
+                    className="hover:text-cyan-700 text-lg hover:underline"
+                  >
+                    Terms and conditions
+                  </a>
                 </li>
                 <li>
-                  <a href="#" className="hover:text-cyan-700 hover:underline">Privacy Policy</a>
+                  <a
+                    href="#"
+                    className="hover:text-cyan-700 text-lg hover:underline"
+                  >
+                    Privacy Policy
+                  </a>
                 </li>
               </ul>
             </div>
@@ -58,19 +114,44 @@ export default function Footer() {
               <h1 className="font-bold text-xl">Solutions</h1>
               <ul className="space-y-4 mt-6">
                 <li>
-                  <a href="#" className="hover:text-cyan-700 hover:underline">Cloud Solutions</a>
+                  <a
+                    href="#"
+                    className="hover:text-cyan-700 text-lg hover:underline"
+                  >
+                    Cloud Solutions
+                  </a>
                 </li>
                 <li>
-                  <a href="#" className="hover:text-cyan-700 hover:underline">UI/UX Design</a>
+                  <a
+                    href="#"
+                    className="hover:text-cyan-700 text-lg hover:underline"
+                  >
+                    UI/UX Design
+                  </a>
                 </li>
                 <li>
-                  <a href="#" className="hover:text-cyan-700 hover:underline">Software Development</a>
+                  <a
+                    href="#"
+                    className="hover:text-cyan-700 text-lg hover:underline"
+                  >
+                    Software Development
+                  </a>
                 </li>
                 <li>
-                  <a href="#" className="hover:text-cyan-700 hover:underline">Cybersecurity</a>
+                  <a
+                    href="#"
+                    className="hover:text-cyan-700 text-lg hover:underline"
+                  >
+                    Cybersecurity
+                  </a>
                 </li>
                 <li>
-                  <a href="#" className="hover:text-cyan-700 hover:underline">IT consulting</a>
+                  <a
+                    href="#"
+                    className="hover:text-cyan-700 text-lg hover:underline"
+                  >
+                    IT consulting
+                  </a>
                 </li>
               </ul>
             </div>
