@@ -1,37 +1,35 @@
-
-
 export default function ApplicationForm() {
   return (
     <>
       <div className="w-full mt-60 p-8">
         <div className="max-w-8xl mx-auto">
           <div className="mb-20 text-center">
-            <h1 className="text-center text-4xl text-cyan-700 font-bold mb-10">
+            <h1 className="text-center text-2xl md:text-4xl text-cyan-700 font-bold mb-10">
               Application Form
             </h1>
-            <p className="text-xl">
+            <p className="text-sm md:text-xl">
               We're excited that you're interested in joining our team!
             </p>
-            <p className="text-xl">
+            <p className="text-sm md:text-xl">
               Please fill out the application form below, and we’ll be in touch
               soon
             </p>
           </div>
           <div className="grid sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-2">
             <div className="flex items-center justify-center">
-              <img  src="join.png" alt="application-img" />
+              <img src="join.png" alt="application-img" />
             </div>
-            <div>
+            <div className="mt-20">
               <form className="space-y-8 w-3/4 mx-auto">
                 <div>
-                  <label className="text-xl">Full Name</label>
+                  <label className="text-sm md:text-xl ">Full Name</label>
                   <input
                     className="w-full p-3 bg-gray-100 outline-none border border-gray-300 rounded-lg mt-2 focus:ring-3 focus:ring-cyan-600"
                     type="text"
                   />
                 </div>
                 <div>
-                  <label className="text-xl">Email Address</label>
+                  <label className="text-sm md:text-xl">Email Address</label>
                   <input
                     className="w-full p-3 bg-gray-100 outline-none border border-gray-300 rounded-lg mt-2 focus:ring-3 focus:ring-cyan-600"
                     type="email"
@@ -40,14 +38,14 @@ export default function ApplicationForm() {
                   />
                 </div>
                 <div>
-                  <label className="text-xl">Mobile Number</label>
+                  <label className="text-sm md:text-xl">Mobile Number</label>
                   <input
                     className="w-full p-3 bg-gray-100 outline-none border border-gray-300 rounded-lg mt-2 focus:ring-3 focus:ring-cyan-600"
                     type="number"
                   />
                 </div>
                 <div>
-                  <label className="text-xl">CV</label>
+                  <label className="text-sm md:text-xl">CV</label>
                   <input
                     className="w-full p-3 bg-gray-100 outline-none border border-gray-300 rounded-lg mt-2 focus:ring-3 focus:ring-cyan-600"
                     type="file"
