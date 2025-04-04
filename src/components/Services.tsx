@@ -48,7 +48,7 @@ const Services = () => {
   ];
   return (
     <>
-      <div className="w-full text-center mx-auto  p-6 mt-14 mb-50">
+      <div className="w-full text-center mx-auto  p-6 mt-20 mb-50">
         <div className="flex justify-center">
           <h1 className="text-xl font-bold mb-4 mr-4 lg:text-6xl md:text-4xl">Our Services</h1>
           <FaToolbox className="w-12 h-12 sm:w-14 sm:h-14 md:w-10 md:h-10 lg:w-12 lg:h-12" />
