@@ -17,7 +17,7 @@ export default function Services() {
       setTimeout(() => {
         const el = document.getElementById(hash);
         if (el) {
-          const yOffset = -210; 
+          const yOffset = -110; 
           const y = el.getBoundingClientRect().top + window.pageYOffset + yOffset;
           window.scrollTo({ top: y, behavior: "smooth" });
         }
@@ -100,11 +100,11 @@ export default function Services() {
           </p>
         </div>
       </div>
-      <div className="w-full mt-30">
+      <div className="w-full mt-40">
         <div className="max-w-5xl mx-auto">
           <div className="grid sm:grid-cols-1 md:grid-cols-1 lg:grid-cols-1 space-y-32">
             {Services.map((service, index) => (
-              <div id={service.slug} key={index} className="text-center">
+              <div id={service.slug} key={index} className="text-center mt-20">
                 {service.icon}
                 <h1 className="mt-10 text-2xl text-cyan-700 font-bold">
                   {service.title}
