@@ -1,10 +1,11 @@
 import Whyjoinus from "./Whyjoinus";
+import ApplicationForm from "./ApplicationForm";
 export default function Careers() {
   return (
     <>
       <div className="flex items-center h-[400px]">
         <div className="text-center max-w-7xl mx-auto mt-10">
-          <h1 className="text-2xl text-cyan-700 font-bold mb-4 mt-20 lg:text-4xl md:text-3xl sm:text-lg">
+          <h1 className="text-3xl text-cyan-700 font-bold mb-4 mt-40 lg:text-4xl md:text-3xl sm:text-lg">
             Join Our Team – Empower the Future with TechNova
           </h1>
           <p className="text-xl mt-8 text-justify">
@@ -24,6 +25,7 @@ export default function Careers() {
       </div>
 
       <Whyjoinus />
+      <ApplicationForm/>
     </>
   );
 }
