@@ -7,7 +7,7 @@ import { FaComputer } from "react-icons/fa6";
 import { FaToolbox } from "react-icons/fa";
 
 
-const Services = () => {
+const OurServices = () => {
   const ServicesList = [
     {
       title: "Custom Software Development",
@@ -75,4 +75,4 @@ const Services = () => {
     </>
   );
 };
-export default Services;
+export default OurServices;
