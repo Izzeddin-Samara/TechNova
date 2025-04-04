@@ -1,4 +1,3 @@
-import { FaCircleInfo } from "react-icons/fa6";
 
 export default function Whoweare() {
   return (
