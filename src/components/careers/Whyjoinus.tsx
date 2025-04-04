@@ -50,7 +50,7 @@ export default function Whyjoinus() {
     <>
       <div className="w-full">
         <div className="max-w-7xl mx-auto mt-40">
-          <h1 className="text-center text-5xl text-cyan-700 font-bold">
+          <h1 className="text-center text-4xl text-cyan-700 font-bold">
             Why join us?
           </h1>
           <div className="grid sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-2 mt-30 gap-16 space-y-8">
