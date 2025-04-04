@@ -31,6 +31,14 @@ export default function Navbar() {
                 About
               </Link>
             </li>
+            <li>
+              <Link
+                className="text-2xl md:text-xl hover:text-cyan-700"
+                to="/services"
+              >
+                Services
+              </Link>
+            </li>
 
             <li>
               <Link
