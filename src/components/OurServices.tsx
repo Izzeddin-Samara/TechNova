@@ -62,13 +62,13 @@ const OurServices = () => {
           </h1>
         </div>
 
-        <div className="max-w-6xl mx-auto p-8 space-y-8 rounded-xl">
+        <div className="max-w-7xl mx-auto p-8 space-y-8 rounded-xl">
           <div className="grid grid-cols-1 sm:grid-cols-1 lg:grid-cols-3 gap-8">
             {ServicesList.map((service, index) => (
               <div
                 id={service.slug}
                 key={index}
-                className="flex flex-col items-center justify-between bg-gray-100 rounded-lg shadow-md p-6 text-center h-full"
+                className="flex flex-col items-center justify-between bg-gray-100 rounded-lg shadow-md p-10 text-center h-full"
               >
                 {/* Icon */}
                 <div className="mb-4 text-cyan-700 text-5xl">
@@ -76,7 +76,7 @@ const OurServices = () => {
                 </div>
 
                 {/* Title */}
-                <h2 className="text-2xl font-bold mb-2">{service.title}</h2>
+                <h2 className="text-lg font-bold mb-2">{service.title}</h2>
 
                 {/* Description */}
                 <p className="text-justify text-gray-700 mb-6">
