@@ -57,12 +57,12 @@ const OurServices = () => {
     <>
       <div className="w-full text-center mx-auto  p-6 mt-20 mb-50">
         <div className="flex justify-center">
-          <h1 className="text-4xl font-bold mb-4 mr-4 lg:text-6xl md:text-4xl">
+          <h1 className="text-4xl font-bold mb-16 mr-4 lg:text-6xl md:text-4xl">
             Our Services
           </h1>
         </div>
 
-        <div className="max-w-7xl mx-auto p-8 space-y-8 rounded-xl">
+        <div className="max-w-7xl mx-auto  space-y-8 rounded-xl">
           <div className="grid grid-cols-1 sm:grid-cols-1 lg:grid-cols-3 gap-8">
             {ServicesList.map((service, index) => (
               <div
@@ -79,7 +79,7 @@ const OurServices = () => {
                 <h2 className="text-lg font-bold mb-2">{service.title}</h2>
 
                 {/* Description */}
-                <p className="text-justify text-gray-700 mb-6">
+                <p className="text-justify text-md text-gray-700 mb-6">
                   {service.description}
                 </p>
 
