@@ -7,6 +7,7 @@ import Contact from "./components/Contact";
 import About from "./components/about/About";
 import ScrollToTop from "./components/ScrollToTop";
 import Careers from "./components/careers/careers";
+import Services from "./components/Services/Services";
 function App() {
   return (
     <>
@@ -18,6 +19,8 @@ function App() {
           <Route path="/contact" element={<Contact />} />
           <Route path="/about" element={<About />} />
           <Route path="/careers" element={<Careers />} />
+          <Route path="/services" element={<Services />} />
+
         </Routes>
         <Footer />
       </Router>
