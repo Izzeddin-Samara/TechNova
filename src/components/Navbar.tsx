@@ -2,6 +2,7 @@ import { useState } from "react";
 import { IoMdRocket } from "react-icons/io";
 import { FaBars, FaTimes } from "react-icons/fa";
 import { Link } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 
 export default function Navbar() {
   const [isOpen, setIsopen] = useState(false);
@@ -19,42 +20,64 @@ export default function Navbar() {
           </h1>
           <ul className="hidden md:flex space-x-8 items-center">
             <li>
-              <Link to="/" className="text-2xl md:text-xl hover:text-cyan-700 ">
+              <NavLink
+                to="/"
+                className={({ isActive }) =>
+                  isActive
+                    ? "text-2xl md:text-xl text-cyan-700 font-semibold"
+                    : "text-2xl md:text-xl hover:text-cyan-700"
+                }
+              >
                 Home
-              </Link>
+              </NavLink>
             </li>
             <li>
-              <Link
-                className="text-2xl md:text-xl hover:text-cyan-700"
+              <NavLink
                 to="/about"
+                className={({ isActive }) =>
+                  isActive
+                    ? "text-2xl md:text-xl text-cyan-700 font-semibold"
+                    : "text-2xl md:text-xl hover:text-cyan-700"
+                }
               >
                 About
-              </Link>
+              </NavLink>
             </li>
             <li>
-              <Link
-                className="text-2xl md:text-xl hover:text-cyan-700"
+              <NavLink
                 to="/services"
+                className={({ isActive }) =>
+                  isActive
+                    ? "text-2xl md:text-xl text-cyan-700 font-semibold"
+                    : "text-2xl md:text-xl hover:text-cyan-700"
+                }
               >
                 Services
-              </Link>
+              </NavLink>
             </li>
-
             <li>
-              <Link
+              <NavLink
                 to="/contact"
-                className="text-2xl md:text-xl hover:text-cyan-700 "
+                className={({ isActive }) =>
+                  isActive
+                    ? "text-2xl md:text-xl text-cyan-700 font-semibold"
+                    : "text-2xl md:text-xl hover:text-cyan-700"
+                }
               >
                 Contact
-              </Link>
+              </NavLink>
             </li>
             <li>
-              <Link
-                className="text-2xl md:text-xl hover:text-cyan-700"
+              <NavLink
                 to="/careers"
+                className={({ isActive }) =>
+                  isActive
+                    ? "text-2xl md:text-xl text-cyan-700 font-semibold"
+                    : "text-2xl md:text-xl hover:text-cyan-700"
+                }
               >
-                Careers{" "}
-              </Link>
+                Careers
+              </NavLink>
             </li>
           </ul>
           {/* Hamburger Icon (only visible on mobile) */}
