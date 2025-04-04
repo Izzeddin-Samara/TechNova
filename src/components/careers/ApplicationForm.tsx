@@ -1,11 +1,10 @@
-import { FaWpforms } from "react-icons/fa6";
 
 
 export default function ApplicationForm() {
   return (
     <>
-      <div className="w-full mt-60">
-        <div className="max-w-6xl mx-auto">
+      <div className="w-full mt-60 p-8">
+        <div className="max-w-8xl mx-auto">
           <div className="mb-20 text-center">
             <h1 className="text-center text-4xl text-cyan-700 font-bold mb-10">
               Application Form
@@ -23,7 +22,7 @@ export default function ApplicationForm() {
               <img  src="join.png" alt="application-img" />
             </div>
             <div>
-              <form className="space-y-8">
+              <form className="space-y-8 w-3/4 mx-auto">
                 <div>
                   <label className="text-xl">Full Name</label>
                   <input
