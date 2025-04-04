@@ -92,11 +92,8 @@ export default function Services() {
             Services
           </h1>
           <p className="text-lg mt-8 text-justify p-4">
-            At TechNova, we specialize in delivering secure, mission-critical
-            technology solutions that empower businesses to innovate and grow.
-            With a passion for cutting-edge development, cybersecurity, and
-            digital transformation, we help organizations stay ahead in a
-            rapidly evolving digital world.
+          At TechNova, we provide tailored, high-performance technology solutions designed to fuel business innovation and long-term growth.
+          From secure software development and cloud infrastructure to advanced cybersecurity and digital transformation strategies, we equip organizations with the tools they need to thrive in an ever-changing digital landscape. Our mission is to deliver reliable, scalable, and future-ready services that make a real impact.
           </p>
         </div>
       </div>
