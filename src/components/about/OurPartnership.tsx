@@ -69,10 +69,10 @@ export default function OurPartnership() {
     <>
       <div className="w-full">
         <div className="max-w-6xl mx-auto mt-50">
-          <h2 className="text-5xl font-bold text-cyan-700 text-center mb-20">
+          <h2 className="text-3xl md:text-5xl font-bold text-cyan-700 text-center mb-20">
             Our Partnership
           </h2>
-          <div className="grid sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+          <div className="grid sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 p-4">
             {partnerCompanies.map((company, index) => (
               <div
                 key={index}

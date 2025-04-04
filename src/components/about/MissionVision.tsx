@@ -8,7 +8,7 @@ export default function MissionVision() {
               <h1 className="text-3xl text-center mt-8 font-bold text-cyan-700">
                 Mission
               </h1>
-              <p className="text-lg text-justify mt-8">
+              <p className="text-lg text-justify mt-8 p-4">
                 At TechNova, our mission is to empower businesses through
                 innovative, secure, and scalable technology solutions. We strive
                 to help organizations achieve growth, efficiency, and security
@@ -20,7 +20,7 @@ export default function MissionVision() {
               <h1 className="text-3xl text-center mt-8 font-bold text-cyan-700">
                 Vision
               </h1>
-              <p className="text-lg text-justify mt-8">
+              <p className="text-lg text-justify mt-8 p-4">
                 Our vision is to be the leading provider of transformative
                 technology solutions that revolutionize businesses, fostering a
                 world where innovation, security, and digital agility empower
