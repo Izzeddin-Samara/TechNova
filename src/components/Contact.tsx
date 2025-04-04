@@ -55,7 +55,7 @@ export default function Contact() {
               <div className="text-center">
                 <MdEmail className="mx-auto text-cyan-700 rounded-lg" size={60} />
                 <h1 className="font-bold">Email us:</h1>
-                <p className="font-bold">
+                <p className="font-bold text-cyan-700">
                   support@technovasolutions.com                
                   
                 </p>
