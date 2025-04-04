@@ -1,3 +1,4 @@
+import Whyjoinus from "./Whyjoinus";
 export default function Careers() {
   return (
     <>
@@ -22,7 +23,7 @@ export default function Careers() {
         </div>
       </div>
 
-      
+      <Whyjoinus />
     </>
   );
 }
