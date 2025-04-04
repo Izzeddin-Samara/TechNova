@@ -53,12 +53,12 @@ export default function Whyjoinus() {
           <h1 className="text-center text-5xl text-cyan-700 font-bold">
             Why join us?
           </h1>
-          <div className="grid sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-2 mt-30 gap-8">
+          <div className="grid sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-2 mt-30 gap-16 space-y-8">
             {Reasons.map((reason, index) => (
                 <div key={index} className="text-center">
                 {reason.icon }
-                <h1 className="font-bold text-cyan-700 text-2xl">{reason.name}</h1>
-                <p className="text-sm mt-4 text-justify">
+                <h1 className="font-bold text-cyan-700 text-3xl mb-8">{reason.name}</h1>
+                <p className="text-lg mt-4 text-justify">
                   {reason.description}
                 </p>
               </div>
