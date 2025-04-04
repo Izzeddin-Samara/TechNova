@@ -88,10 +88,10 @@ export default function Services() {
     <>
       <div className="flex items-center h-[400px]">
         <div className="text-center max-w-7xl mx-auto mt-10">
-          <h1 className="text-2xl text-cyan-700 font-bold mb-4 mt-20 lg:text-5xl md:text-3xl sm:text-lg">
+          <h1 className="text-3xl md:text-5xl text-cyan-700 font-bold mb-4 mt-60 lg:text-5xl md:text-3xl sm:text-lg">
             Services
           </h1>
-          <p className="text-xl mt-8 text-justify">
+          <p className="text-lg mt-8 text-justify p-4">
             At TechNova, we specialize in delivering secure, mission-critical
             technology solutions that empower businesses to innovate and grow.
             With a passion for cutting-edge development, cybersecurity, and
@@ -109,7 +109,7 @@ export default function Services() {
                 <h1 className="mt-10 text-2xl text-cyan-700 font-bold">
                   {service.title}
                 </h1>
-                <p className="mt-5 text-justify text-lg">
+                <p className="mt-5 text-justify text-lg p-4">
                   {service.description}
                 </p>
               </div>
