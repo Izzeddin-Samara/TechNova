@@ -51,23 +51,21 @@ export default function Testimonials () {
     <>
       <div className="w-full">
         <div className="flex justify-center mt-50">
-          <h1 className="text-6xl font-bold mr-4 mb-4">Testimonials</h1>
-          <FaQuoteLeft size={60} />
+          <h1 className="text-3xl md:text-5xl font-bold mr-4 mb-4">Testimonials</h1>
         </div>
-        <div className="w-3/10 h-2 bg-cyan-700 mx-auto mb-12"></div>
 
-        <p className="text-center text-4xl mt-4 font-medium">
+        <p className="text-center text-xl mt-4 font-medium">
           We Have Earned the trust of Our Most
-          <span className="text-cyan-700 font-bold ml-4">
+          <span className="text-cyan-700 font-bold ml-2">
             Valuable Customers
           </span>
         </p>
-        <div className="max-w-4xl mx-auto">
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-2 gap-16 mt-8">
+        <div className="max-w-7xl mx-auto">
+          <div className="grid grid-cols-1  lg:grid-cols-3 gap-8 mt-8">
             {testimonials.map((testimonial, index) => (
               <div
                 key={index}
-                className="text-center bg-gray-50 p-8 rounded-lg shadow-lg mb-8 "
+                className="text-center bg-gray-50 p-8 rounded-lg shadow-lg mb-8 m-8 p-8"
               >
                 {testimonial.icon}
                 <h1 className="font-bold text-3xl">{testimonial.name}</h1>
