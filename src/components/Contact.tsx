@@ -29,7 +29,7 @@ export default function Contact() {
                 <div>
                   <label className="text-xl">Name</label>
                   <input
-                    className="w-full p-3 outline-none border border-gray-300 rounded-lg mt-2 focus:ring-3 focus:ring-cyan-600"
+                    className="w-full p-3 bg-gray-100 outline-none border border-gray-300 rounded-lg mt-2 focus:ring-3 focus:ring-cyan-600"
                     type="text"
                   />
                 </div>
@@ -43,12 +43,12 @@ export default function Contact() {
                 <div>
                   <label className="text-xl">Message</label>
                   <textarea
-                    className="w-full p-8 border rounded-lg border outline-none border-gray-300 mt-2 resize-none focus:ring-3 focus:ring-cyan-600"
+                    className="w-full p-12 border rounded-lg border outline-none border-gray-300 mt-2 resize-none focus:ring-3 focus:ring-cyan-600"
                     name="Message"
                     id=""
                   ></textarea>
                 </div>
-                <button className=" w-full bg-cyan-700 hover:bg-cyan-800 text-white p-4 rounded-lg font-bold focus:ring-4 focus:ring-cyan-600 cursor-pointer text-xl">Send Message</button>
+                <button className=" w-full bg-cyan-700 hover:bg-cyan-800 text-white p-4 rounded-lg font-bold focus:ring-4 focus:ring-cyan-500 cursor-pointer text-xl">Send Message</button>
               </form>
             </div>
             <div className="space-y-6">
