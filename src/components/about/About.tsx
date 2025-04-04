@@ -1,4 +1,4 @@
-import Whoweare from "./whoweare";
+import Whoweare from "./Whoweare";
 import MissionVision from "./MissionVision";
 import OurValues from "./OurValues";
 import OurTeam from "./OurTeam";
