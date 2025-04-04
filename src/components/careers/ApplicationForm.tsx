@@ -20,7 +20,7 @@ export default function ApplicationForm() {
               <img src="join.png" alt="application-img" />
             </div>
             <div className="mt-20">
-              <form className="space-y-8 w-3/4 mx-auto">
+              <form className="space-y-8 w-4/4 mx-auto md:w-3/4">
                 <div>
                   <label className="text-sm md:text-xl ">Full Name</label>
                   <input
