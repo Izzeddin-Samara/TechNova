@@ -3,6 +3,10 @@ import { FaLocationDot } from "react-icons/fa6";
 import { FaPhoneAlt } from "react-icons/fa";
 
 export default function Contact() {
+
+  const handlesubmit =(e) => {
+    e.preventDefault()
+  }
   return (
     <>
       <div className="flex items-center h-[400px]">
@@ -25,7 +29,7 @@ export default function Contact() {
 
           <div className="grid grid-cols-1 sm:grid-col-2 lg:grid-cols-2 gap-16">
             <div>
-              <form className="space-y-6">
+              <form className="space-y-6" onSubmit={handlesubmit}>
                 <div>
                   <label className="text-xl">Name</label>
                   <input
@@ -48,7 +52,7 @@ export default function Contact() {
                     id=""
                   ></textarea>
                 </div>
-                <button className=" w-full bg-cyan-700 hover:bg-cyan-800 text-white p-4 rounded-lg font-bold focus:ring-4 focus:ring-cyan-500 cursor-pointer text-xl">Send Message</button>
+                <button type="submit" className=" w-full bg-cyan-700 hover:bg-cyan-800 text-white p-4 rounded-lg font-bold focus:ring-4 focus:ring-cyan-500 cursor-pointer text-xl">Send Message</button>
               </form>
             </div>
             <div className="space-y-6">

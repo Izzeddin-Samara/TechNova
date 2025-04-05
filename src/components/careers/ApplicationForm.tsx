@@ -1,4 +1,8 @@
 export default function ApplicationForm() {
+
+    const handlesubmit =(e) => {
+        e.preventDefault()
+      }
   return (
     <>
       <div className="w-full mt-60 p-8">
@@ -20,7 +24,7 @@ export default function ApplicationForm() {
               <img src="join.png" alt="application-img" />
             </div>
             <div className="mt-20">
-              <form className="space-y-8 w-4/4 mx-auto md:w-3/4">
+              <form onSubmit={handlesubmit} className="space-y-8 w-4/4 mx-auto md:w-3/4">
                 <div>
                   <label className="text-sm md:text-xl ">Full Name</label>
                   <input
@@ -51,7 +55,7 @@ export default function ApplicationForm() {
                     type="file"
                   />
                 </div>
-                <button className=" w-full bg-cyan-700 hover:bg-cyan-800 text-white p-4 rounded-lg font-bold focus:ring-4 focus:ring-cyan-500 cursor-pointer text-xl">
+                <button type="submit" className=" w-full bg-cyan-700 hover:bg-cyan-800 text-white p-4 rounded-lg font-bold focus:ring-4 focus:ring-cyan-500 cursor-pointer text-xl">
                   Apply
                 </button>
               </form>
