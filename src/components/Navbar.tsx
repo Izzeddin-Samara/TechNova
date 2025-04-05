@@ -1,7 +1,6 @@
 import { useState } from "react";
 import { IoMdRocket } from "react-icons/io";
 import { FaBars, FaTimes } from "react-icons/fa";
-import { Link } from "react-router-dom";
 import { NavLink } from "react-router-dom";
 
 export default function Navbar() {
