@@ -1,8 +1,9 @@
-export default function ApplicationForm() {
+const ApplicationForm: React.FC = () => {
 
-    const handlesubmit =(e) => {
-        e.preventDefault()
-      }
+    const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
+        e.preventDefault();
+        // Your form submission logic (if any)
+      };
   return (
     <>
       <div className="w-full mt-60 p-8">
@@ -24,7 +25,7 @@ export default function ApplicationForm() {
               <img src="join.png" alt="application-img" />
             </div>
             <div className="mt-20">
-              <form onSubmit={handlesubmit} className="space-y-8 w-4/4 mx-auto md:w-3/4">
+              <form onSubmit={handleSubmit} className="space-y-8 w-4/4 mx-auto md:w-3/4">
                 <div>
                   <label className="text-sm md:text-xl ">Full Name</label>
                   <input
@@ -66,3 +67,4 @@ export default function ApplicationForm() {
     </>
   );
 }
+export default ApplicationForm;
