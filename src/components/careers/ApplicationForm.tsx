@@ -13,12 +13,10 @@ const ApplicationForm: React.FC = () => {
               Application Form
             </h1>
             <p className="text-sm md:text-xl">
-              We're excited that you're interested in joining our team!
-            </p>
-            <p className="text-sm md:text-xl">
-              Please fill out the application form below, and we’ll be in touch
+              We're excited that you're interested in joining our team. Please fill out the application form below, and we’ll be in touch
               soon
             </p>
+            
           </div>
           <div className="grid sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-2">
             <div className="flex items-center justify-center">
