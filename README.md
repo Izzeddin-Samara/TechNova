@@ -55,6 +55,14 @@ To get a local copy up and running, follow these steps:
    ```
 5. **Open your browser and navigate to**
    [http://localhost:3000](http://localhost:3000)
+
+
+ ## Contact
+
+Feel free to reach out to me via the following:
+
+- **Email**: [izzidinsamara@gmail.com](mailto:izzidinsamara@gmail.com)
+- **LinkedIn**: [https://www.linkedin.com/in/izzeddin-samara/](https://www.linkedin.com/in/izzeddin-samara/)
    
    
    
