@@ -5,8 +5,38 @@ import { FaGithub } from "react-icons/fa";
 import { FaLinkedin } from "react-icons/fa";
 import { FaFacebookSquare } from "react-icons/fa";
 import { AiFillInstagram } from "react-icons/ai";
+import { Link } from "react-router-dom";
 
 export default function Footer() {
+  const ServicesLinks = [
+    {
+      title: "Custom Software Development",
+
+      slug: "custom-software",
+    },
+    {
+      title: "UI/UX Design",
+
+      slug: "ui-ux-design",
+    },
+    {
+      title: "Cloud Solutions",
+
+      slug: "cloud-solutions",
+    },
+    {
+      title: "IT Consulting",
+      slug: "it-consulting",
+    },
+    {
+      title: "Cybersecurity Solutions",
+      slug: "cybersecurity-solutions",
+    },
+    {
+      title: "Digital Transformation",
+      slug: "digital-transformation",
+    },
+  ];
   return (
     <>
       <footer className="mt-50 bg-gray-200 p-8">
@@ -28,20 +58,20 @@ export default function Footer() {
               <h1 className="font-bold text-xl">Company</h1>
               <ul className="space-y-4 mt-6">
                 <li>
-                  <a
-                    href="#"
+                  <Link
+                    to="/about"
                     className="hover:text-cyan-700 text-lg hover:underline"
                   >
                     About us
-                  </a>
+                  </Link>
                 </li>
                 <li>
-                  <a
-                    href="#"
+                  <Link
+                    to="/services"
                     className="hover:text-cyan-700 text-lg hover:underline"
                   >
                     Our Services
-                  </a>
+                  </Link>
                 </li>
                 <li>
                   <a
@@ -60,12 +90,13 @@ export default function Footer() {
                   </a>
                 </li>
                 <li>
-                  <a
-                    href="#"
+                  <Link
+                    to="/careers"
                     className="hover:text-cyan-700 text-lg hover:underline"
                   >
+                    {" "}
                     Careers
-                  </a>
+                  </Link>
                 </li>
               </ul>
             </div>
@@ -81,12 +112,12 @@ export default function Footer() {
                   </a>
                 </li>
                 <li>
-                  <a
-                    href="#"
+                  <Link
+                    to="/contact"
                     className="hover:text-cyan-700 text-lg hover:underline"
                   >
                     Contact Us
-                  </a>
+                  </Link>
                 </li>
                 <li>
                   <a
@@ -117,46 +148,16 @@ export default function Footer() {
             <div>
               <h1 className="font-bold text-xl">Solutions</h1>
               <ul className="space-y-4 mt-6">
-                <li>
-                  <a
-                    href="#"
-                    className="hover:text-cyan-700 text-lg hover:underline"
-                  >
-                    Cloud Solutions
-                  </a>
-                </li>
-                <li>
-                  <a
-                    href="#"
-                    className="hover:text-cyan-700 text-lg hover:underline"
-                  >
-                    UI/UX Design
-                  </a>
-                </li>
-                <li>
-                  <a
-                    href="#"
-                    className="hover:text-cyan-700 text-lg hover:underline"
-                  >
-                    Software Development
-                  </a>
-                </li>
-                <li>
-                  <a
-                    href="#"
-                    className="hover:text-cyan-700 text-lg hover:underline"
-                  >
-                    Cybersecurity
-                  </a>
-                </li>
-                <li>
-                  <a
-                    href="#"
-                    className="hover:text-cyan-700 text-lg hover:underline"
-                  >
-                    IT consulting
-                  </a>
-                </li>
+                {ServicesLinks.map((link, index) => (
+                  <li key={index}>
+                    <Link
+                      to={`/services#${link.slug}`}
+                      className="hover:text-cyan-700 text-lg hover:underline"
+                    >
+                      {link.title}
+                    </Link>
+                  </li>
+                ))}
               </ul>
             </div>
             <div>
@@ -224,7 +225,15 @@ export default function Footer() {
                   </a>
                 </li>
               </ul>
-              <p className="mt-10">Created by <a className="hover:underline text-cyan-700" href="https://github.com/Izzeddin-Samara">Izzeddin Samara</a></p>
+              <p className="mt-10">
+                Created by{" "}
+                <a
+                  className="hover:underline text-cyan-700"
+                  href="https://github.com/Izzeddin-Samara"
+                >
+                  Izzeddin Samara
+                </a>
+              </p>
             </div>
           </div>
         </div>
