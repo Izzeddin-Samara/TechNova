@@ -11,7 +11,7 @@ const Contact: React.FC = () => {
     <>
       <div className="flex items-center h-[400px]">
         <div className="text-center w-full">
-          <h1 className="text-3xl font-bold mb-4 mt-20 lg:text-5xl md:text-3xl sm:text-lg">
+          <h1 className="text-3xl font-bold mb-4 mt-20 text-cyan-700 lg:text-5xl md:text-3xl sm:text-lg">
             Contact Us
           </h1>
           <h1 className="text-sm w-4/6 mx-auto  sm:text-xl lg:text-2xl md:text-lg">
