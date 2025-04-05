@@ -30,7 +30,7 @@ export default function Whoweare() {
               <img className="mt-8 rounded-lg" src="office.webp" alt="office-img" />
             </div>
             <div>
-              <p className="text-md mt-8 md:ml-8 mt-16 text-justify md:text-xl">
+              <p className="text-md mt-8 md:ml-8 mt-8 text-justify md:text-xl">
                 We pride ourselves on being solution-oriented, always focused on
                 delivering secure, scalable, and high-performance systems that
                 meet the unique needs of each client. Whether it’s creating web
