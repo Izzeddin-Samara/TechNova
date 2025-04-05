@@ -44,7 +44,7 @@ export default function OurValues() {
           <h1 className="text-center text-3xl md:text-5xl text-cyan-700 font-bold">
             Our Values
           </h1>
-          <div className="grid sm:grid-cols-1 md:grid-cols-5 lg:grid-cols-5 mt-30 gap-8 p-4">
+          <div className="grid sm:grid-cols-1 md:grid-cols-5 lg:grid-cols-5 mt-20 gap-8 p-4">
             {Values.map((value, index) => (
                 <div key={index} className="text-center">
                 {value.icon }
