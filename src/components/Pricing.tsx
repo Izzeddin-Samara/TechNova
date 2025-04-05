@@ -54,8 +54,8 @@ export default function Pricing() {
   return (
     <>
       <div>
-        <h1 className="text-5xl font-bold text-center mt-30">Built for businesses ready to innovate</h1>
-        <p className="text-center text-md md:text-2xl text-gray-600 w-3/4 mx-auto mt-8">At Technova, we leverage technology to drive growth, efficiency, and security—helping businesses stay ahead in a digital world.</p>
+        <h1 className="text-3xl font-bold text-center mt-30">Built for businesses ready to innovate</h1>
+        <p className="text-center text-sm md:text-2xl text-gray-600 w-3/4 mx-auto mt-8">At Technova, we leverage technology to drive growth, efficiency, and security—helping businesses stay ahead in a digital world.</p>
         <div className="max-w-7xl mx-auto">
           <div className="grid sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 m-4">
             {pricingPlans.map((plan) => (
