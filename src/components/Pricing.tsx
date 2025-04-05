@@ -1,4 +1,5 @@
 import { FaCheckCircle } from "react-icons/fa";
+import { Link } from "react-router-dom";
 
 export default function Pricing() {
   const pricingPlans = [
@@ -54,8 +55,13 @@ export default function Pricing() {
   return (
     <>
       <div>
-        <h1 className="text-3xl font-bold text-center mt-30">Built for businesses ready to innovate</h1>
-        <p className="text-center text-sm md:text-2xl text-gray-600 w-3/4 mx-auto mt-8">At Technova, we leverage technology to drive growth, efficiency, and security—helping businesses stay ahead in a digital world.</p>
+        <h1 className="text-3xl font-bold text-center mt-30">
+          Built for businesses ready to innovate
+        </h1>
+        <p className="text-center text-sm md:text-2xl text-gray-600 w-3/4 mx-auto mt-8">
+          At Technova, we leverage technology to drive growth, efficiency, and
+          security—helping businesses stay ahead in a digital world.
+        </p>
         <div className="max-w-7xl mx-auto">
           <div className="grid sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 m-4">
             {pricingPlans.map((plan) => (
@@ -67,13 +73,17 @@ export default function Pricing() {
 
                 <ul className="text-center">
                   {plan.features.map((feature, index) => (
-                    <div className="flex space-x-2 text-md space-y-8">
-                      <FaCheckCircle size={20} className="text-cyan-700"/>
+                    <div className="flex space-x-2 text-sm space-y-8">
+                      <FaCheckCircle size={20} className="text-cyan-700" />
                       <li key={index}> {feature}</li>
                     </div>
                   ))}
                 </ul>
-                <button className="bg-cyan-700 font-bold hover:bg-cyan-800 p-4 w-full text-2xl text-white rounded-lg focus:ring-4 focus:ring-cyan-500 cursor-pointer">Get Started</button>
+                <Link to="/contact">
+                  <button className="bg-cyan-700 font-bold hover:bg-cyan-800 p-4 w-full text-2xl text-white rounded-lg focus:ring-4 focus:ring-cyan-500 cursor-pointer">
+                    Get Started
+                  </button>
+                </Link>
               </div>
             ))}
           </div>
