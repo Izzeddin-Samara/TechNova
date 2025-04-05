@@ -1,6 +1,10 @@
 import { MdEmail } from "react-icons/md";
 import { FaLocationDot } from "react-icons/fa6";
 import { BsFillTelephoneFill } from "react-icons/bs";
+import { FaGithub } from "react-icons/fa";
+import { FaLinkedin } from "react-icons/fa";
+import { FaFacebookSquare } from "react-icons/fa";
+import { AiFillInstagram } from "react-icons/ai";
 
 export default function Footer() {
   return (
@@ -178,11 +182,54 @@ export default function Footer() {
                   </span>
                 </li>
               </ul>
+              <ul className="flex justify-center gap-8 mt-10">
+                <li>
+                  <a
+                    href="#"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="hover:text-gray-500"
+                  >
+                    <FaGithub size={30} />
+                  </a>
+                </li>
+                <li>
+                  <a
+                    href="#"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="hover:text-gray-500"
+                  >
+                    <FaLinkedin size={30} />
+                  </a>
+                </li>
+                <li>
+                  <a
+                    href="#"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="hover:text-gray-500"
+                  >
+                    <FaFacebookSquare size={30} />
+                  </a>
+                </li>
+                <li>
+                  <a
+                    href="#"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="hover:text-gray-500"
+                  >
+                    <AiFillInstagram size={30} />
+                  </a>
+                </li>
+              </ul>
+              <p className="mt-10">Created by <a className="hover:underline text-cyan-700" href="https://github.com/Izzeddin-Samara">Izzeddin Samara</a></p>
             </div>
           </div>
         </div>
         <div className="w-full h-1 bg-cyan-700 mx-auto mt-8"></div>
-        <p className="text-center text-gray-500 mt-4 mb-2">
+        <p className="text-center text-gray-500 text-sm mt-4 mb-2">
           © 2025 TechNova Solutions. All rights reserved.
         </p>
       </footer>
