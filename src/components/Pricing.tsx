@@ -9,7 +9,7 @@ export default function Pricing() {
       description:
         "Perfect for startups and small businesses looking for a strong digital foundation.",
       features: [
-        "Custom Web & Mobile App Development",
+        "Custom Web & Mobile Development",
         "UI/UX Design Consultation",
         "Cloud Hosting & Deployment",
         "Basic IT Consulting",
