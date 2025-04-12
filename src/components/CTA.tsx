@@ -10,7 +10,7 @@ export default function CTA() {
           Let’s discuss how TechNova can help you innovate and grow.
         </p>
         <Link to="/contact">
-          <button className="bg-cyan-700 font-bold hover:bg-cyan-800 p-4 w-2/5 md:w-1/5 mt-8  text-md md:text-2xl text-white rounded-lg focus:ring-4 focus:ring-cyan-500 cursor-pointer">
+          <button className="bg-cyan-700 font-bold hover:bg-cyan-800 p-4 md:w-1/5 mt-8  text-md md:text-xl text-white rounded-lg focus:ring-4 focus:ring-cyan-500 cursor-pointer">
             Contact Us now!
           </button>
         </Link>
