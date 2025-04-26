@@ -96,8 +96,8 @@ export default function Navbar() {
               to="/"
               className={({ isActive }) =>
                 isActive
-                  ? "text-2xl md:text-xl text-cyan-700 font-semibold"
-                  : "text-2xl md:text-xl hover:text-cyan-700"
+                  ? "text-lg md:text-xl text-cyan-700 font-semibold"
+                  : "text-lg md:text-xl hover:text-cyan-700"
               }
             >
               Home
@@ -108,8 +108,8 @@ export default function Navbar() {
               to="/about"
               className={({ isActive }) =>
                 isActive
-                  ? "text-2xl md:text-xl text-cyan-700 font-semibold"
-                  : "text-2xl md:text-xl hover:text-cyan-700"
+                  ? "text-lg md:text-xl text-cyan-700 font-semibold"
+                  : "text-lg md:text-xl hover:text-cyan-700"
               }
             >
               About
@@ -120,8 +120,8 @@ export default function Navbar() {
               to="/services"
               className={({ isActive }) =>
                 isActive
-                  ? "text-2xl md:text-xl text-cyan-700 font-semibold"
-                  : "text-2xl md:text-xl hover:text-cyan-700"
+                  ? "text-lg md:text-xl text-cyan-700 font-semibold"
+                  : "text-lg md:text-xl hover:text-cyan-700"
               }
             >
               Services
@@ -132,8 +132,8 @@ export default function Navbar() {
               to="/contact"
               className={({ isActive }) =>
                 isActive
-                  ? "text-2xl md:text-xl text-cyan-700 font-semibold"
-                  : "text-2xl md:text-xl hover:text-cyan-700"
+                  ? "text-lg md:text-xl text-cyan-700 font-semibold"
+                  : "text-lg md:text-xl hover:text-cyan-700"
               }
             >
               Contact
@@ -144,8 +144,8 @@ export default function Navbar() {
               to="/careers"
               className={({ isActive }) =>
                 isActive
-                  ? "text-2xl md:text-xl text-cyan-700 font-semibold"
-                  : "text-2xl md:text-xl hover:text-cyan-700"
+                  ? "text-lg md:text-xl text-cyan-700 font-semibold"
+                  : "text-lg md:text-xl hover:text-cyan-700"
               }
             >
               Careers
