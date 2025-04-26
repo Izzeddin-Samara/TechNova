@@ -1,5 +1,4 @@
 import { useState } from "react";
-import { IoMdRocket } from "react-icons/io";
 import { FaBars, FaTimes } from "react-icons/fa";
 import { NavLink } from "react-router-dom";
 
@@ -14,7 +13,6 @@ export default function Navbar() {
       <nav className="w-full fixed bg-gray-100">
         <div className="max-w-7xl flex justify-between mx-auto h-16 items-center mt-4">
           <h1 className="text-3xl font-bold  lg:text-5xl">
-            <IoMdRocket className="inline" />
             Tech<span className="text-cyan-700">Nova </span>
           </h1>
           <ul className="hidden md:flex space-x-8 items-center">
