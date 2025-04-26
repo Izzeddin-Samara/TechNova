@@ -11,7 +11,7 @@ export default function Navbar() {
   return (
     <>
       <nav className="w-full fixed bg-gray-100">
-        <div className="max-w-7xl flex justify-between mx-auto h-16 items-center mt-4">
+        <div className="max-w-7xl flex justify-between mx-auto h-16 items-center mt-4 p-4">
           <h1 className="text-3xl font-bold  lg:text-5xl">
             Tech<span className="text-cyan-700">Nova </span>
           </h1>
