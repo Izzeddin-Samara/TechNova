@@ -9,8 +9,8 @@ const Contact: React.FC = () => {
   };
   return (
     <>
-      <div className=" max-w-7xl mx-auto h-auto p-8 mt-30">
-        <div className="flex items-center h-[200px]">
+      <div className=" max-w-7xl mx-auto h-auto p-8 ">
+        <div className="flex items-center h-[200px] mt-30">
           <div className="text-center w-full">
             <h1 className="text-3xl font-bold mb-4 text-cyan-700 lg:text-5xl md:text-3xl sm:text-lg">
               Contact Us
