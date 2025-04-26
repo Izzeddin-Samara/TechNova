@@ -68,7 +68,7 @@ const OurServices = () => {
               <div
                 id={service.slug}
                 key={index}
-                className="flex flex-col items-center justify-between bg-gray-100 rounded-lg shadow-md p-10 text-center h-full"
+                className="flex flex-col items-center justify-between bg-gray-200 rounded-lg shadow-md p-10 text-center h-full"
               >
                 {/* Icon */}
                 <div className="mb-4 text-cyan-700 text-5xl">
