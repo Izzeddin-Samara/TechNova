@@ -91,7 +91,7 @@ export default function Services() {
           <h1 className="text-3xl md:text-5xl text-cyan-700 font-bold mb-4 mt-60 lg:text-5xl md:text-3xl sm:text-lg">
             Services
           </h1>
-          <p className="text-lg mt-8 text-justify p-4">
+          <p className="text-md mt-8 text-justify p-8">
           At TechNova, we provide tailored, high-performance technology solutions designed to fuel business innovation and long-term growth.
           From secure software development and cloud infrastructure to advanced cybersecurity and digital transformation strategies, we equip organizations with the tools they need to thrive in an ever-changing digital landscape. Our mission is to deliver reliable, scalable, and future-ready services that make a real impact.
           </p>
@@ -99,14 +99,14 @@ export default function Services() {
       </div>
       <div className="w-full mt-40">
         <div className="max-w-5xl mx-auto">
-          <div className="grid sm:grid-cols-1 md:grid-cols-1 lg:grid-cols-1 space-y-32">
+          <div className="grid sm:grid-cols-1 md:grid-cols-1 lg:grid-cols-1 space-y-14">
             {Services.map((service, index) => (
               <div id={service.slug} key={index} className="text-center mt-20">
                 {service.icon}
-                <h1 className="mt-10 text-2xl text-cyan-700 font-bold">
+                <h1 className="mt-10 text-xl text-cyan-700 font-bold">
                   {service.title}
                 </h1>
-                <p className="mt-5 text-justify text-lg p-4">
+                <p className="mt-5 text-justify text-md p-8">
                   {service.description}
                 </p>
               </div>
