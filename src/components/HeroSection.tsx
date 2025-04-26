@@ -4,7 +4,7 @@ export default function HeroSection() {
     <>
       <div className="flex items-center h-[800px]">
         <div className="text-center w-full">
-          <h1 className="text-4xl w-4/6 mx-auto font-bold sm:text-6xl lg:text-7xl">
+          <h1 className="text-4xl w-4/6 mx-auto font-bold sm:text-6xl lg:text-7xl leading-tight">
             Empowering Your Business with Cutting-Edge Technology Solutions
           </h1>
           <p className="text-md sm:text-2xl lg:text-2xl text-gray-600 mt-16 w-3/4 mx-auto">
