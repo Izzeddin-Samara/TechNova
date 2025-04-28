@@ -39,7 +39,7 @@ export default function Footer() {
   ];
   return (
     <>
-      <footer className="mt-50 bg-gray-200 p-8">
+      <footer className="mt-50 bg-gray-200 h-auto p-8 pb-1">
         <div className="max-w-8xl mx-auto text-center">
           <div className="grid sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-5 space-y-8 space-x-4">
             <div>
@@ -237,8 +237,8 @@ export default function Footer() {
             </div>
           </div>
         </div>
-        <div className="w-full h-1 bg-cyan-700 mx-auto mt-8"></div>
-        <p className="text-center text-gray-500 text-sm mt-4 mb-2">
+        <div className="w-full h-0.5 bg-cyan-700 mx-auto"></div>
+        <p className="text-center text-gray-950 text-xs mt-2">
           © 2025 TechNova Solutions. All rights reserved.
         </p>
       </footer>
