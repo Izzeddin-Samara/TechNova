@@ -11,7 +11,7 @@ const OurServices = () => {
     {
       title: "Custom Software Development",
       description:
-        "We provide custom software development tailored to your business needs. Whether it's a web or mobile app, our team builds solutions that are scalable, secure, and easy to maintain. We focus on delivering software that drives",
+        "We provide custom software development tailored to your business needs. Whether it's a web or mobile app, our team builds solutions that are scalable, secure, and easy to maintain. We focus on delivering software that drives business growth, enhances user experiences, and streamlines operations.",
       icon: <FaComputer size={50} className="mx-auto mb-2 text-cyan-700" />,
       slug: "custom-software",
     },
