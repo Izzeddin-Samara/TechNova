@@ -3,10 +3,7 @@ import MissionVision from "./MissionVision";
 import OurValues from "./OurValues";
 import OurTeam from "./OurTeam";
 import OurPartnership from "./OurPartnership";
-
-
-
-
+import { Link } from "react-router-dom";
 
 export default function About() {
   return (
@@ -26,11 +23,27 @@ export default function About() {
         </div>
       </div>
 
-      <Whoweare/>
-      <MissionVision/>
-      <OurValues/>
-      <OurTeam/>
-      <OurPartnership/>
+      <Whoweare />
+      <MissionVision />
+      <OurValues />
+      <OurTeam />
+      <OurPartnership />
+
+      {/* CTA section */}
+      <div className="mt-50 text-center w-full">
+        <h1 className="text-xl md:text-4xl  font-bold w-full mx-auto">
+          Ready to Partner with Experts Who Understand Your Needs?
+        </h1>
+        <p className="text-xs md:text-xl mt-8 p-1 ">
+          Learn more about TechNova and how we can help transform your business
+          with cutting-edge technology solutions.{" "}
+        </p>
+        <Link to="/contact">
+          <button className="bg-cyan-700 font-bold hover:bg-cyan-800 p-4 md:w-2/5 mt-8  text-md md:text-xl text-white rounded-lg focus:ring-4 focus:ring-cyan-500 cursor-pointer">
+          Tell Us About Your Project
+          </button>
+        </Link>
+      </div>
     </>
   );
 }
