@@ -6,6 +6,7 @@ import { FaShieldAlt } from "react-icons/fa";
 import { FaCloud } from "react-icons/fa";
 import { FaSync } from "react-icons/fa";
 import { FaComputer } from "react-icons/fa6";
+import { Link } from "react-router-dom";
 
 export default function Services() {
   const location = useLocation();
@@ -17,8 +18,9 @@ export default function Services() {
       setTimeout(() => {
         const el = document.getElementById(hash);
         if (el) {
-          const yOffset = -110; 
-          const y = el.getBoundingClientRect().top + window.pageYOffset + yOffset;
+          const yOffset = -110;
+          const y =
+            el.getBoundingClientRect().top + window.pageYOffset + yOffset;
           window.scrollTo({ top: y, behavior: "smooth" });
         }
       }, 100); // small delay to ensure content is rendered
@@ -47,9 +49,7 @@ export default function Services() {
       title: "Cloud Solutions",
       description:
         "In an increasingly competitive digital landscape, leveraging cloud technology has become essential for businesses that want to scale quickly, stay agile, and optimize costs. Technova offers a comprehensive suite of cloud services designed to transform your IT infrastructure. We partner with leading cloud providers, such as Amazon Web Services (AWS), Microsoft Azure, and Google Cloud, to help businesses seamlessly migrate to the cloud, optimize their cloud environment, and manage it for long-term success. Our cloud solutions include cloud architecture design, cloud migration, system integration, data management, and ongoing cloud infrastructure management. We ensure that your cloud environment is secure, reliable, and scalable, allowing your business to run efficiently and effectively. Our experts assess your current infrastructure, identify opportunities for optimization, and create a custom cloud strategy that aligns with your business goals. Additionally, we help you implement disaster recovery and backup solutions to ensure business continuity in case of unexpected disruptions. With our cloud expertise, you can innovate faster, reduce operational costs, and maintain high availability without the complexity of managing physical infrastructure.",
-      icon: (
-        <FaCloud size={100} className="mx-auto mb-2 text-cyan-700" />
-      ),
+      icon: <FaCloud size={100} className="mx-auto mb-2 text-cyan-700" />,
 
       slug: "cloud-solutions",
     },
@@ -57,9 +57,7 @@ export default function Services() {
       title: "IT Consulting",
       description:
         "Navigating the complex and ever-changing world of technology can be a daunting task, but with Technova’s IT consulting services, you’ll gain the strategic guidance needed to make informed, long-term technology decisions. Our team of experienced IT consultants works closely with your organization to understand your specific business needs, challenges, and goals. We conduct thorough assessments of your current IT infrastructure, evaluating everything from your software and hardware to your processes and cybersecurity measures. Based on this analysis, we provide actionable, customized recommendations to improve performance, reduce costs, and optimize efficiency. Whether you need help with system integration, cloud adoption, IT security, or digital strategy, our consultants offer expert advice and practical solutions. We help you stay ahead of emerging technologies and trends, ensuring your organization is well-positioned for future growth. Our IT consulting services are designed to help you streamline operations, enhance collaboration, and ensure that your technology investments deliver measurable value to your business.",
-      icon: (
-        <GiLightBulb size={100} className="mx-auto mb-2 text-cyan-700" />
-      ),
+      icon: <GiLightBulb size={100} className="mx-auto mb-2 text-cyan-700" />,
 
       slug: "it-consulting",
     },
@@ -67,18 +65,14 @@ export default function Services() {
       title: "Cybersecurity Solutions",
       description:
         "In today's digital world, the security of your business's sensitive information is paramount. Technova provides comprehensive cybersecurity solutions designed to protect your organization from a wide range of digital threats. Our team of cybersecurity experts works proactively to safeguard your systems, networks, and data from external and internal risks. We offer a full range of services, including vulnerability assessments, penetration testing, malware detection, encryption, threat intelligence, and incident response. We conduct thorough security audits to identify potential weaknesses in your systems and recommend best practices to mitigate those risks. With a focus on building multi-layered security strategies, we ensure that your organization remains secure against evolving threats. Additionally, we provide employee training to promote a security-aware culture, helping to reduce human error and improve overall security posture. Whether you're looking to comply with industry regulations or protect your business from data breaches, Technova's cybersecurity services provide the robust protection needed to keep your digital assets safe and secure.",
-      icon: (
-        <FaShieldAlt size={100} className="mx-auto mb-2 text-cyan-700" />
-      ),
+      icon: <FaShieldAlt size={100} className="mx-auto mb-2 text-cyan-700" />,
       slug: "cybersecurity-solutions",
     },
     {
       title: "Digital Transformation",
       description:
         "In today’s rapidly changing business environment, digital transformation is no longer just an option—it's a necessity. At Technova, we specialize in helping organizations embrace digital technologies to streamline operations, improve customer experiences, and enhance overall business performance. We work with you to develop a comprehensive digital transformation strategy that includes adopting the latest technologies, automating processes, and leveraging data insights to optimize business decisions. Whether you're looking to upgrade legacy systems, move to the cloud, or digitize your customer-facing services, we have the expertise to help you navigate each phase of transformation. Our approach focuses on modernizing your business processes, improving cross-team collaboration, and enhancing your digital presence to stay ahead of competitors. We also emphasize the importance of change management, ensuring that your employees are well-prepared for the transition and can adapt to new technologies with ease. With Technova’s digital transformation services, your business will be able to innovate faster, deliver better services, and position itself for long-term success in a digital-first world.",
-      icon: (
-        <FaSync size={100} className="mx-auto mb-2 text-cyan-700" />
-      ),
+      icon: <FaSync size={100} className="mx-auto mb-2 text-cyan-700" />,
 
       slug: "digital-transformation",
     },
@@ -92,8 +86,13 @@ export default function Services() {
             Services
           </h1>
           <p className="text-md mt-8 text-justify p-8">
-          At TechNova, we provide tailored, high-performance technology solutions designed to fuel business innovation and long-term growth.
-          From secure software development and cloud infrastructure to advanced cybersecurity and digital transformation strategies, we equip organizations with the tools they need to thrive in an ever-changing digital landscape. Our mission is to deliver reliable, scalable, and future-ready services that make a real impact.
+            At TechNova, we provide tailored, high-performance technology
+            solutions designed to fuel business innovation and long-term growth.
+            From secure software development and cloud infrastructure to
+            advanced cybersecurity and digital transformation strategies, we
+            equip organizations with the tools they need to thrive in an
+            ever-changing digital landscape. Our mission is to deliver reliable,
+            scalable, and future-ready services that make a real impact.
           </p>
         </div>
       </div>
@@ -113,6 +112,22 @@ export default function Services() {
             ))}
           </div>
         </div>
+      </div>
+      
+      {/* CTA section */}
+      <div className="mt-50 text-center w-full">
+        <h1 className="text-xl md:text-4xl  font-bold w-full mx-auto">
+          Looking for Customized Tech Solutions to Elevate Your Business?
+        </h1>
+        <p className="text-xs md:text-xl mt-8 p-1 ">
+          Discover how our tailored services can help you achieve your goals and
+          drive success.{" "}
+        </p>
+        <Link to="/contact">
+          <button className="bg-cyan-700 font-bold hover:bg-cyan-800 p-4 md:w-1/5 mt-8  text-md md:text-xl text-white rounded-lg focus:ring-4 focus:ring-cyan-500 cursor-pointer">
+            Request a Free Consultation
+          </button>
+        </Link>
       </div>
     </>
   );
