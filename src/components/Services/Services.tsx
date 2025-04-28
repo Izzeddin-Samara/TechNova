@@ -125,7 +125,7 @@ export default function Services() {
         </p>
         <Link to="/contact">
           <button className="bg-cyan-700 font-bold hover:bg-cyan-800 p-4 md:w-1/5 mt-8  text-md md:text-xl text-white rounded-lg focus:ring-4 focus:ring-cyan-500 cursor-pointer">
-            Request a Free Consultation
+          Start Your Project Today
           </button>
         </Link>
       </div>
