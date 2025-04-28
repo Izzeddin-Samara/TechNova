@@ -97,7 +97,7 @@ export default function Services() {
         </div>
       </div>
       <div className="w-full mt-40">
-        <div className="max-w-5xl mx-auto">
+        <div className="max-w-7xl mx-auto">
           <div className="grid sm:grid-cols-1 md:grid-cols-1 lg:grid-cols-1 space-y-14">
             {Services.map((service, index) => (
               <div id={service.slug} key={index} className="text-center mt-20">
@@ -124,7 +124,7 @@ export default function Services() {
           drive success.{" "}
         </p>
         <Link to="/contact">
-          <button className="bg-cyan-700 font-bold hover:bg-cyan-800 p-4 md:w-1/5 mt-8  text-md md:text-xl text-white rounded-lg focus:ring-4 focus:ring-cyan-500 cursor-pointer">
+          <button className="bg-cyan-700 font-bold hover:bg-cyan-800 p-4 md:w-2/5 mt-8  text-md md:text-xl text-white rounded-lg focus:ring-4 focus:ring-cyan-500 cursor-pointer">
             Request a Free Consultation
           </button>
         </Link>
